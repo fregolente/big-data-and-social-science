@@ -1,8 +1,8 @@
 # Table of contents
 
 * [Introduction](README.md)
-* [Working with Web Data and APIs](02-ChapterWeb.Rmd)
-* [Record Linkage](03-ChapterLinkage.Rmd)
+* [Background and Context](02-ChapterWeb.Rmd)
+* [Workflow Overview](03-ChapterLinkage.Rmd)
 * [Databases](04-ChapterDB.Rmd)
 * [Scaling up through Parallel and Distributed Computing](05-ChapterParallel.Rmd)
 * [Information Visualization](06-ChapterViz.Rmd)
