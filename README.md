@@ -14,9 +14,5 @@ The structure of the user guide is as follows. It begins with the vision, goals 
 
 
 
-The project team members would be thrilled to receive suggestions about how to improve the guide, the platform, or any of its components. Please send any suggestions to: info@democratizingdata.ai.
-
-```{r
-knitr::include_graphics("ChapterIntro/figures/Figure1.png")
-```
+The project team members would be thrilled to receive suggestions about how to improve the guide, the platform, or any of its components. Please send any suggestions to: _<mark style="color:blue;">info@democratizingdata.ai.</mark>_
 

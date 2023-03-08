@@ -1,3 +1,58 @@
 # Background and Context
 
-****
+### 2.1 Vision and Goals
+
+The vision of the Democratizing Data project is to improve the practice of both government policy and research, by providing evidence about how datasets are used and building an ecosystem of agencies, researchers, and other stakeholders that are committed to revealing the value of data and evidence.
+
+The Search and Discovery Platform advances that vision by providing a platform with multiple access modalities - a user dashboard, Jupyter notebooks, and an API -whereby agencies can get a better understanding of how their data are used.
+
+
+
+### 2.2 Agency Questions
+
+Agencies have identified a set of questions: each modality is structured to provide agency staff and researchers a different lens into the questions. It is likely that agencies will develop other questions as the program develops more understanding about how datasets are used, and their impact on evidence and policy, so this list should be seen as a starting not an ending point.
+
+
+
+#### Basic Usage Information
+
+How much are agency datasets used in research and how has that usage changed over time? How often is each one of an agency’s identified dataset used in research and how has that usage changed over time?
+
+
+
+#### **Details about the agency’s portfolio**
+
+What topics are an agency’s datasets being used to study and what publications are associated with each topic?
+
+What topics are each one of the agency’s identified datasets used to study in research and what publications are associated with each topic? What other datasets are being used to study each topic?
+
+
+
+#### Drilling into the details for each dataset
+
+Who are the main authors using each agency’s datasets? Who are the main authors using each specific dataset? What are the publications associated with each author? What institutions are the centers of use for each agency dataset and in what geographic locations are the institutions located?
+
+
+
+### 2.3 Response to Legislative Mandate and Committee Recommendations
+
+The platform directly supports Section 202(c) of the Evidence Act Title 2 (OPEN Government Data Act), namely to
+
+* Facilitate collaboration with non-Government entities (including businesses), researchers, and the public for the purpose of understanding how data users value and use government data
+* Engage the public in using public data assets of the agency and encourage collaboration by publishing on the website of the agency, on a regular basis (not less than annually), information on the usage of such assets by non-Government users, and
+* Assist the public in expanding the use of public data assets
+
+It also directly supports several of the recommendations to OMB of the Advisory Committee on Data for Evidence Building (see also Figure 1)
+
+
+
+* Measure the utility of data (Recommendation 1.6)
+* Optimize user experience for the Standard Application Process (Recommendation 1.10)
+* Promote Accessibility and Auditability through data search and discovery Recommendations (5.1 – 5.4)
+
+The platform can also support the Standard Application Process by providing information to researchers about the use of federal data assets in the Federal Statistical Research Data Center system.
+
+
+
+
+
