@@ -82,3 +82,72 @@
 
 ### dyad: The core table with dyads representing dataset references
 
+| Column name         | Description                                                                                                                                                                                   | Data type | Length | Is nulllable |
+| ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- | ------ | ------------ |
+| id                  | unique identifier for this entry                                                                                                                                                              | bigint    | 0      | NO           |
+| run\_id             | identifies the agency run for which this entry was determined, foreign key to agency\_run.id                                                                                                  | bigint    | 0      | NO           |
+| publication\_id     | foreign key the publication table's id column, identifying the publication within which the datast reference represented by this dyad was identified                                          | bigint    | 0      | NO           |
+| elsevier\_id        | REMOVE                                                                                                                                                                                        | int       | 0      | NO           |
+| dataset\_alias\_id  | foreign key to the dataset\_alias table's id column identifying the match made between this dyad and a dataset alias provided by an agency. If no such match was found this column has a NULL | bigint    | 0      | YES          |
+| alias\_id           | the intrinsic id assigned by Elsevier to the dataset alias, corresponding to the alias\_id column in the dataset\_alias table                                                                 | bigint    | 0      | YES          |
+| mention\_candidate  | the phrase in the publication that was deemed by the algorithm to reflect a reference to a dataset                                                                                            | varchar   | 1028   | NO           |
+| snippet             | snippet of text surrounding the mention\_candidate, meant to provide contextual information to reviewers/validators                                                                           | varchar   | -1     | YES          |
+| last\_updated\_date | last time the row was updated. generally the time of creation of the row                                                                                                                      | datetime  | 0      | NO           |
+| is\_fuzzy           | column has value 1 if the matching between mention candidate and the dataset alias was performed using a fuzzy algorithm, 0 otherwise                                                         | bit       | 0      | YES          |
+| fuzzy\_score        | in case the matching between mention candidate and the dataset alias was performed using a fuzzy algorithm, this column stores the score indicating how certain match was deemed to be        | real      | 0      | YES          |
+
+
+
+### dyad\_model: model scores for particular entries in the dyad table
+
+| Column name         | Description                                                                                  | Data type | Length | Is nullable |
+| ------------------- | -------------------------------------------------------------------------------------------- | --------- | ------ | ----------- |
+| id                  | unique identifier for this entry                                                             | bigint    | 0      | NO          |
+| run\_id             | identifies the agency run for which this entry was determined, foreign key to agency\_run.id | bigint    | 0      | NO          |
+| dyad\_id            | identifies the dyad                                                                          | bigint    | 0      | NO          |
+| model\_id           | identifies the model                                                                         | bigint    | 0      | NO          |
+| score               | the score of this model for the dyad                                                         | real      | 0      | YES         |
+| last\_updated\_date | last time the row was updated. generally the time of creation of the row                     | datetime  | 0      | NO          |
+
+
+
+### issn: The ISSN/ISBN codes for the journal
+
+| Column name         | Description                                                                                  | Data type | Length | Is nullable |
+| ------------------- | -------------------------------------------------------------------------------------------- | --------- | ------ | ----------- |
+| id                  | unique identifier for this entry                                                             | bigint    | 0      | NO          |
+| run\_id             | identifies the agency run for which this entry was determined, foreign key to agency\_run.id | bigint    | 0      | NO          |
+| journal\_id         | foreign key to the journal table's id column, identifying the journal for this ISSN          | bigint    | 0      | YES         |
+| ISSN                | the ISSN/ISBN codes for the referenced journal/source                                        | varchar   | 13     | YES         |
+| last\_updated\_date | last time the row was updated. generally the time of creation of the row                     | datetime  | 0      | NO          |
+
+
+
+### journal: Journal that a publication in the publication table appeared in
+
+| Column name         | Description                                                                                                            | Data type | Length | Is nullable |
+| ------------------- | ---------------------------------------------------------------------------------------------------------------------- | --------- | ------ | ----------- |
+| id                  | unique identifier and primary key for this table                                                                       | bigint    | 0      | NO          |
+| run\_id             | foreign key, identifier of the agency run for which this entry was determined                                          | bigint    | 0      | NO          |
+| publisher\_id       | foreign key to the publisher table, identifying the publisher for this journal at the time the agency run was executed | bigint    | 0      | YES         |
+| external\_id        | the scopus ID for the journal/source                                                                                   | varchar   | 128    | YES         |
+| title               | the name of the journal/source that the publication was published in                                                   | varchar   | 1028   | NO          |
+| cite\_score         | citescore is an Elsevier derived metric that measures the relative standing of a journal                               | decimal   | 0      | YES         |
+| last\_updated\_date |  last time the row was updated. generally the time of creation of the row                                              | datetime  | 0      | NO          |
+
+
+
+### model: the Kaggle models that are run
+
+| Column name         | Description                                                                  | Data type | Length | Is nullable |
+| ------------------- | ---------------------------------------------------------------------------- | --------- | ------ | ----------- |
+| id                  | unique identifier for this entry                                             | bigint    | 0      | NO          |
+| name                | the name of the model                                                        | varchar   | 32     | NO          |
+| github\_commit\_url | the github url where the commit for this model can be found                  | varchar   | 1024   | YES         |
+| description         | description of the model                                                     | nvarchar  | -1     | YES         |
+| last\_updated\_date | last time the row was updated. generally the time of the creation of the row | datetime  | 0      | NO          |
+
+
+
+### publication: publication discovered in a run
+
