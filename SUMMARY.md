@@ -11,3 +11,7 @@
 * [Usage Dashboard](09-ChapterNetworks.Rmd)
 * [Dashboard for Network Exploration](10-ChapterError.Rmd)
 * [Community Outreach and Engagement](11-ChapterBiasFairness.Rmd)
+* [APPENDIX A: Metadata Schema](appendix-a-metadata-schema.md)
+* [APPENDIX B: Metadata Table and Data Dictionary](appendix-b-metadata-table-and-data-dictionary.md)
+* [APPENDIX C: Technical Workflow Description](appendix-c-technical-workflow-description.md)
+* [APPENDIX D: Show Us the Data Workshop Results](appendix-d-show-us-the-data-workshop-results.md)

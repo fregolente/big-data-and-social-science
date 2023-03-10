@@ -1,3 +1,33 @@
 # Community Outreach and Engagement
 
-****
+One of the key goals of the project is to ensure that the user community – both internal to the agency and external – is engaged in substantive ways through workshops, webinars, and a dedicated website that provides opportunity for comment and feedback. Such engagement is not only mandated by the legislation identified in [Section 2.3](02-ChapterWeb.Rmd#2.3-response-to-legislative-mandate-and-committee-recommendations), but also often recommended by [National Academies report](#user-content-fn-1)[^1].
+
+While each agency will have its own way of engaging with its internal constituents, there are some common threads that could shape the external engagement with researchers, survey respondents, data users, and specific under-represented groups. However, it is expected that each agency will identify the target user community to participate in the early workshops.&#x20;
+
+The general format of a user community early workshop would be to explain the platform, provide hands-on experience using Jupyter Notebooks, and to gather feedback on: 1. how to improve the functionality of the platform; 2. usability of the platform; and 3. future possible collaborations between the agency and the user community and within the user community.&#x20;
+
+Multiple workshops could be structured to serve the different potential constituencies. One might focus on survey respondents, who would react to the usage information in the dashboard. Another might focus on users of the Standard Application Process for the Federal Statistical Research Data Centers. A third might include graduate students, postdocs and other junior scholars who have yet to develop the connections to the empirical knowledge base in a research field.&#x20;
+
+The workshops will include participation from all the project partners but will primarily be supported by University of Maryland, NYU, and the agencies. The partners are committed to working with the agencies to bring in a diverse and inclusive range of participants, particularly from academic institutions such as Historically Black Colleges and Universities and Hispanic Serving Institutions.&#x20;
+
+Subsequent workshops could provide input into the theory of change – how investing in data creates value. That theory of change can provide the framework for developing well grounded usage metrics and inform the development of agency questions. As such, a researcher engagement workshop might bring together both active and potential data users, senior and junior researchers interested in the agency mission areas, as well as evaluation experts.
+
+It is also possible that subsequent workshops include the broader federal community. The Evidence Act requires that agencies engage with the user community, and charged three key federal entities with fulfilling that task. These include statistical officials (through the Interagency Committee on Statistical Policy), Chief Data Officers (the Chief Data Officer Council) and Chief Evaluation Officers.
+
+
+
+### 11.1 Other Outreach
+
+Other outreach activities are likely to include presentations at professional conferences of researchers and data users, presentations to federal cross-agency councils, such as the Chief Data Officers Council and the Interagency Council on Statistical Policy, and associations such as the Council of Professional Associations on Federal Statistics. Each agency will be at the center of planning for their outreach activities, with support from the partners.
+
+
+
+### 11.2 Learning from Previous Workshops and Outreach
+
+Much previous work can be used in designing the workshops. The Show Us the Data workshop provides a strong basis, since information (reproduced below) was provided by Chief Data Officers, the research community, publishers, and academic institutions.
+
+[Chief Data Officer and Evidence Officials](https://coleridgeinitiative.org/show-us-the-data/stakeholder-questions#federal-agencies)
+
+Since the competition focused on uses of data sets in research, the outcomes were most immediately appliable to agencies with scientific mission components. CDOs from agencies for which discovery activities occurred in the competition were invited to review results in one-on-one sessions and then to attend this panel discussion. The Agencies represented in the discussion were Commerce (NOAA), NSF, USDA, Transportation. Given that the breadth of data work in an Agency may cross many mission teams, some agencies had multiple team members participate in the discussion session Their detailed responses are summarized in Appendix D: CDOS.
+
+[^1]: Such as, for example, the CNSTAT report on "[A Vision and Roadmap for Education Statistics](https://www.nationalacademies.org/our-work/a-vision-and-roadmap-for-education-statistics-in-2030-and-beyond)".
