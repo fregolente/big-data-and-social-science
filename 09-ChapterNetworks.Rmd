@@ -17,3 +17,11 @@ The initial agency landing page will provide basic usage information, as require
 Agencies have also asked for reports about their portfolio: i.e., how their data are used. Their questions include: What topics are agency datasets being used to study, and what publications are associated with each topic? What topics are each one of an agency’s identified dataset used in research and what publications are associated with each topic? What other datasets are being used to study each topic? Figure 12 shows the answers to those questions.
 
 <figure><img src=".gitbook/assets/portfolio.png" alt=""><figcaption><p>Figure 12: Portfolio information</p></figcaption></figure>
+
+
+
+### 9.3 Drilling into details
+
+Agencies have also requested information that can also be used by researchers about each dataset in their portfolio, as shown in Figure 13. They have specific questions and the goal of these dashboards is to provide an easy-to-use and clear-to-understand interface to answer the most pressing questions. Their questions include: who are the main authors using each agency’s datasets? Who are the main authors using each dataset, and the associated publications? What institutions are the centers of use for each agency dataset and in what geographic locations are the institutions located? What are the journals publishing work using the dataset?
+
+<figure><img src=".gitbook/assets/Researcher.png" alt=""><figcaption><p>Figure 13: Researcher dashboard with dataset specific information</p></figcaption></figure>
