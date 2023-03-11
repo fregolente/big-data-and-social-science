@@ -194,3 +194,93 @@
 | publication\_id     | foreign key to publication table's id column, identifying the publication in this relation   | bigint    | 0      | NO          |
 | asjc\_id            | foreign key to the ASJC                                                                      | bigint    | 0      | NO          |
 | last\_updated\_date | last time the row was updated. generally the time of creation of the row                     | datetime  | 0      | NO          |
+
+
+
+### publication\_author: Associative table linking publication and author tables
+
+| Column name         | Description                                                                                  | Data type | Length | Is nullable |
+| ------------------- | -------------------------------------------------------------------------------------------- | --------- | ------ | ----------- |
+| id                  | unique identifier for this entry                                                             | bigint    | 0      | NO          |
+| run\_id             | identifies the agency run for which this entry was determined, foreign key to agency\_run.id | bigint    | 0      | NO          |
+| publication\_id     | foreign key to the publication for this author                                               | bigint    | 0      | NO          |
+| author\_id          | foreign key to the table with scopus author entries                                          | bigint    | 0      | NO          |
+| author\_position    | position of author in the list of authors on the publication                                 | int       | 0      | YES         |
+| last\_updated\_date | last time the row was updated. generally the time of creation of the row                     | datetime  | 0      | NO          |
+
+
+
+### publication\_topic: identifying the topic assigned to a publication
+
+| Column name         | Description                                                                                                             | Data type | Length | Is nullable |
+| ------------------- | ----------------------------------------------------------------------------------------------------------------------- | --------- | ------ | ----------- |
+| id                  | unique identifier for this entry                                                                                        | bigint    | 0      | NO          |
+| run\_id             | identifies the agency run for which this entry was determined, foreign key to agency\_run.id                            | bigint    | 0      | NO          |
+| publication\_id     | foreign key to the topic table's id column identifying the publication in this relation between publications and topics | bigint    | 0      | NO          |
+| topic\_id           | foreign key to the topic table's id column identifying the topic in this relation between publications and topics       | bigint    | 0      | NO          |
+| score               | TBD                                                                                                                     | real      | 0      | YES         |
+| last\_updated\_date | last time the row was updated. generally the time of creation of the row                                                | datetime  | 0      | NO          |
+
+
+
+### publisher: Publishers of the journals the publications were published in
+
+| Column name         | Description                                                                                  | Data type | Length | Is nullable |
+| ------------------- | -------------------------------------------------------------------------------------------- | --------- | ------ | ----------- |
+| id                  | unique identifier for this entry                                                             | bigint    | 0      | NO          |
+| run\_id             | identifies the agency run for which this entry was determined, foreign key to agency\_run.id | bigint    | 0      | NO          |
+| external\_id        | external identifier of this publisher in Elsevier's scopus repository                        | nvarchar  | 128    | YES         |
+| name                | name of the publisher                                                                        | nvarchar  | 120    | YES         |
+| last\_updated\_date | last time the row was updated. generally the time of creation of the row                     | datetime  | 0      | NO          |
+
+
+
+### reviewer: Reviewers are assigned to validate dyads in the publication\_dataset\_alias table
+
+| Column name         | Description                                                                                          | Data type | Length | Is nullable |
+| ------------------- | ---------------------------------------------------------------------------------------------------- | --------- | ------ | ----------- |
+| id                  | unique identifier for this entry                                                                     | bigint    | 0      | NO          |
+| susd\_user\_id      | foreign key to the susd\_user table's id column, identifying the user corresponding to this reviewer | bigint    | 0      | NO          |
+| run\_id             | identifies the agency run for which this entry was determined, foreign key to agency\_run.id         | bigint    | 0      | NO          |
+| last\_updated\_date | last time the row was updated. generally the time of creation of the row                             | datetime  | 0      | NO          |
+
+
+
+### snippet\_validation: the validation results for dyads provided by reviewers
+
+| Column name                 | Description                                                                                                                                                                                               | Data type | Length | Is nullable |
+| --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------- | ------ | ----------- |
+| id                          | unique identifier for this entry                                                                                                                                                                          | bigint    | 0      | NO          |
+| run\_id                     | identifies the agency run for which this entry was determined, foreign key to agency\_run.id                                                                                                              | bigint    | 0      | NO          |
+| reviewer\_id                | foreign key to the reviewer table's id column, identifying the reviewer assigned to validate this snippet                                                                                                 | bigint    | 0      | NO          |
+| dyad\_id                    | foreign key to the dyad table's id column, identifying the dyad that is being validated                                                                                                                   | bigint    | 0      | NO          |
+| is\_dataset\_reference      | if the value in this column is 1, it indicates the dyad indeed has been identified a reference to a dataset; if 0, it is not a dataset reference; if -1, the reviewer was unsure about it                 | smallint  | 0      | YES         |
+| agency\_dataset\_identified | if the value in this column is 1, it indicates the dyad indeed identified the specific dataset provided by the agency; if 0, it is not a ference to that dataset; if -1, the reviewer was unsure about it | smallint  | 0      | YES         |
+| notes                       | any notes the reviewer attached to the dyad being reviewed                                                                                                                                                | nvarchar  | -1     | YES         |
+| last\_updated\_date         | last time the row was updated. generally the time of creation of the row                                                                                                                                  | datetime  | 0      | NO          |
+
+
+
+### susd\_user: A user of the validation tool
+
+| Column name         | Description                                                              | Data type | Length | Is nullable |
+| ------------------- | ------------------------------------------------------------------------ | --------- | ------ | ----------- |
+| id                  | unique identifier of this table                                          | bigint    | 0      | NO          |
+| first\_name         | first name of the individual                                             | varchar   | 100    | YES         |
+| last\_name          | surname of the individual                                                | varchar   | 100    | YES         |
+| email               | email of the user                                                        | varchar   | 100    | YES         |
+| password            | encrypted password of the user                                           | varchar   | 100    | YES         |
+| last\_updated\_date | last time the row was updated. generally the time of creation of the row | datetime  | 0      | NO          |
+
+
+
+### topic: topis defined by Elsevier and assigned to publications, consist of three concatenated keywords
+
+| Column name         | Description                                                                                         | Data type | Length | Is nullable |
+| ------------------- | --------------------------------------------------------------------------------------------------- | --------- | ------ | ----------- |
+| id                  | unique identifier for this entry                                                                    | bigint    | 0      | NO          |
+| run\_id             | identifies the agency run for which this entry was determined, foreign key to agency\_run.id        | bigint    | 0      | NO          |
+| keywords            | a topic is defined in Elsevier by three keywords. This columns stores these as a —-separated string | varchar   | 1028   | YES         |
+| external\_topic\_id | external identifier of this topic provided by Elsevier                                              | varchar   | 128    | YES         |
+| prominence          | TBD                                                                                                 | real      | 0      | YES         |
+| last\_updated\_date | last time the row was updated. generally the time of creation of the row                            | datetime  | 0      | NO          |
