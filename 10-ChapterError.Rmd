@@ -17,25 +17,17 @@ The dashboard can be accessed through 2 different interfaces:
 
 The Notebooks provide filtering capabilities, where filtering on the network nodes will filter out their associated rows in the metadata tables, and vice-versa.
 
-{% tabs %}
-{% tab title="Author" %}
-The nodes of the network are publication authors.&#x20;
+**Author**    The nodes of the network are publication authors.&#x20;
 
-An edge (link) connecting 2 author nodes is created if those authors appear in the same publication. The size of a network node is proportional to the number of papers published by each author. The width of the edge connecting 2 authors is proportional to the number of papers they have published together.
-{% endtab %}
+> An edge (link) connecting 2 author nodes is created if those authors appear in the same publication. The size of a network node is proportional to the number of papers published by each author. The width of the edge connecting 2 authors is proportional to the number of papers they have published together.
 
-{% tab title="Institutions" %}
-The nodes of the network are the institutions of publication authors.
+**Institutions**    The nodes of the network are the institutions of publication authors.
 
-An edge (link) connecting 2 institution nodes is created if an author from one institution appears in the same publication as an author from the other institution. The size of a network node is proportional to the total number of publications associated to the institution. The width of the edge connecting 2 institutions is proportional to the number of publications their authors have published together.
-{% endtab %}
+> An edge (link) connecting 2 institution nodes is created if an author from one institution appears in the same publication as an author from the other institution. The size of a network node is proportional to the total number of publications associated to the institution. The width of the edge connecting 2 institutions is proportional to the number of publications their authors have published together.
 
-{% tab title="Topics" %}
-The nodes of the network are the topics related to publications.&#x20;
+**Topics**    The nodes of the network are the topics related to publications.&#x20;
 
-An edge (link) connecting 2 topic nodes is created if the 2 topics appear in the same publication. The size of a topic node is proportional to the total number of times it appears in all publications. The width of the edge connecting 2 topic nodes is proportional to the number of publications the topics have in common.
-{% endtab %}
-{% endtabs %}
+> An edge (link) connecting 2 topic nodes is created if the 2 topics appear in the same publication. The size of a topic node is proportional to the total number of times it appears in all publications. The width of the edge connecting 2 topic nodes is proportional to the number of publications the topics have in common.
 
 The following tables and respective columns are shown on the left half of the screen:
 
