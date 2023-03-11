@@ -1,6 +1,6 @@
-# Usage Dashboard
+# Chapter 9: Usage Dashboard
 
-Beyond offering an API, the platform currently provides a prototype usage dashboard that enable agencies to visualize answers to [agency questions](02-ChapterWeb.Rmd#2.2-agency-questions). The initial example for USDA can be viewed [here](https://public.tableau.com/app/profile/democratizing.data.hl/viz/DemocratizingData-WebDataConnector-USDA-NewLayout/Publications).
+Beyond offering an API, the platform currently provides a prototype usage dashboard that enable agencies to visualize answers to [agency questions](02-background.md#2.2-agency-questions). The initial example for USDA can be viewed [here](https://public.tableau.com/app/profile/democratizing.data.hl/viz/DemocratizingData-WebDataConnector-USDA-NewLayout/Publications).
 
 As the project evolves, and agencies share resources, it is expected that new dashboards will evolve, as USDA/NASS has shown with their approach [here](https://public.tableau.com/app/profile/national.agricultural.statistics.service/viz/5WsofNASSDataUsage/The5Ws). The proposed production version for a common agency baseline website is in wireframe stage and described in the following sections.
 
