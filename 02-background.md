@@ -1,4 +1,4 @@
-# Background and Context
+# Chapter 2: Background and Context
 
 ### 2.1   Vision and Goals
 
@@ -38,7 +38,7 @@ The platform directly supports Section 202(c) of the Evidence Act Title 2 (OPEN 
 
 It also directly supports several of the recommendations to OMB of the Advisory Committee on Data for Evidence Building (see also Figure 1)
 
-
+<figure><img src=".gitbook/assets/Screenshot 2023-03-13 at 3.28.32 PM.png" alt=""><figcaption><p>Figure 1: Recommendation of ACDEB</p></figcaption></figure>
 
 * Measure the utility of data (Recommendation 1.6)
 * Optimize user experience for the Standard Application Process (Recommendation 1.10)
@@ -64,7 +64,9 @@ The output from the workshop fed into continuing work and during 2021, the effor
 
 A pilot was then initiated with one of the CHORUS board members, Elsevier, to test the possibility of connecting agency datasets with a fully curated corpus of publications, Scopus (Figure 2), and policy documents (Figure 3).
 
+<figure><img src=".gitbook/assets/DD_HowWeApproachTheProblem (1).png" alt=""><figcaption><p>Figure 2: The links between agency datasets and publications</p></figcaption></figure>
 
+<figure><img src=".gitbook/assets/policy_impact.png" alt=""><figcaption><p>Figure 3: The potential next links to policy impact</p></figcaption></figure>
 
 ### 2.5   Academic and Research Partners
 
@@ -99,7 +101,7 @@ The project is the result of a collaboration among six academic partners. The ro
 
 **Department of Commerce:** The National Oceanic and Atmospheric Administration (NOAA)’s primary objective was to develop a reusable data discovery interface. The overall goal for NOAA is to use machine learning to find citations to NOAA datasets in journal articles and other scientific literature. This knowledge will help highlight the value of NOAA’s open data, track the provenance of data used in scientific research, and help new users find trusted data that is relevant to their research topic.
 
-**National Institutes of Health:** The primary objective is to provide a rich and innovative set of tools for addressing data sharing problems by enabling search and discovery for the subsequent use of NIH funded digital data assets. The NIH project is sponsored by the Office of Data Science Strategy. It will identify a subset of HIV datasets found in Mendeley Data\* and find the publications that cite those datasets. It will expand information the use of data in the Mendeley data repository, such as number of views and downloads to include other aggregate measures generated from the Democratizing Data platform such as diversity of use, use within specific disease ecosystems and ecosystem services, use within particular communities, and use of particular historical significance2 . The team will also develop dataset use at the researcher level, to identify and encourage experts who share their expertise, as well as at the institutional level to help inform program investment decisions. The platform will enable NIH/ODSS to extend to and engage with their associated communities, following on from the January 2022 [ODSS dataset search workshop](https://datascience.nih.gov/data-infrastructure/search-workshop).&#x20;
+**National Institutes of Health:** The primary objective is to provide a rich and innovative set of tools for addressing data sharing problems by enabling search and discovery for the subsequent use of NIH funded digital data assets. The NIH project is sponsored by the Office of Data Science Strategy. It will identify a subset of HIV datasets found in Mendeley Data\* and find the publications that cite those datasets. It will expand information the use of data in the Mendeley data repository, such as number of views and downloads to include other aggregate measures generated from the Democratizing Data platform such as diversity of use, use within specific disease ecosystems and ecosystem services, use within particular communities, and use of particular [historical significance .](https://data.mendeley.com/) The team will also develop dataset use at the researcher level, to identify and encourage experts who share their expertise, as well as at the institutional level to help inform program investment decisions. The platform will enable NIH/ODSS to extend to and engage with their associated communities, following on from the January 2022 [ODSS dataset search workshop](https://datascience.nih.gov/data-infrastructure/search-workshop).&#x20;
 
 
 

@@ -2,9 +2,9 @@
 
 There are three main workflow stages: identifying and finding datasets in publications (process); providing agency and researcher access to information through APIs, Jupyter Notebooks and usage dashboard (access and disseminate), and getting feedback from the user community (feedback).
 
-
-
 ### 3.1   Process
+
+<figure><img src=".gitbook/assets/Process.png" alt=""><figcaption><p>Figure 4: Process</p></figcaption></figure>
 
 **Initial Search:** An agency identifies a list of datasets of interest (target datasets), ideally including commonly used dataset aliases and, where available, the dataset digital object identifier (DOIs). Elsevier works with NYU to identify a search corpus of full text publications on which the ML models can be run. For more details see [Chapter 5](05-algorithms.md).
 
@@ -25,6 +25,8 @@ The full technical description of this workflow is available in [Appendix C](app
 
 
 ### 3.2   Access and Dissemination
+
+<figure><img src=".gitbook/assets/Access.png" alt=""><figcaption><p>Figure 5: Access and Disseminattion</p></figcaption></figure>
 
 There are three access modalities: Jupyter Notebooks, an Application Programming Interface (API), and an interactive usage dashboard. Each is designed to provide different insights into answering the core [Agency Questions](02-background.md#2.2-agency-questions) that are the reason for building the Search and Discovery Platform.
 
