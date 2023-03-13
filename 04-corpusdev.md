@@ -38,6 +38,6 @@ The following table provides a summary of full text records that are available a
 | 2018          | 3,455,000      | 3,152,839              | 576,948                          | 2,881,415                                           | 91.39%                             | 83.40% |
 | 2017          | 3,270,051      | 2,843,709              | 553,854                          | 2,594,161                                           | 91.22%                             | 79.33% |
 
-_ted_
+_Table 1: Full text records available and searchable based on the calendar year of publication during the period 2017 to 2021._
 
 As more fully described in the next chapter, the Machine Learning algorithms are applied to the licensed full text records in the corpus to identify those research outputs which contain candidate datasets. The ML algorithms are then further supplemented with fuzzy matching routines. The final step in the Elsevier workflow is to generate the metadata for the research outputs identified as containing the datasets.
