@@ -4,7 +4,7 @@ description: Democratizing Data Search and Discovery Platform User Guide
 
 # Chapter 1: Introduction to the User Guide
 
-## Overview <a href="#sec-1-1" id="sec-1-1"></a>
+## 1.1  Overview <a href="#sec-1-1" id="sec-1-1"></a>
 
 The Search and Discovery Platform has been developed to describe how datasets identified by a set of federal agencies have been used. This user guide provides information about the Search and Discovery Platform workflow. The Guide is designed to provide information to agency staff and to researchers who are using the platform to understand how datasets are used and want to know more information about how the reported results were generated. The Guide is also designed to encourage agency and researcher communities to contribute to the platform, and thus increase the value of data for both for themselves and the community at large. Understanding data use and value is a complex endeavor, and the platform will need the contribution of many experts to be fully successful.&#x20;
 
