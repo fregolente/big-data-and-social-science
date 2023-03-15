@@ -1,2 +1,21 @@
-# Jupyter Notebooks and SciServer
+# Chapter 7: Jupyter Notebooks and SciServer
 
+The Jupyter Notebooks access the database of metadata using an existing successful platform called SciServer. SciServer is built and supported by Johns Hopkins’ Institute for Data Intensive Engineering and Science (IDIES) that builds upon and extends the SkyServer system of serverside tools that introduced the astronomical community to SQL (Structured Query Language) and has been providing the Sloan Digital Sky Survey catalog data to the public . It is particularly appealing because, although it was originally designed to support astronomy research, it expanded to include several research and education tools that made access to hundreds of Terabytes of astronomical data easy and intuitive for researchers, students, and the public \[[9](references.md),[10](references.md)]. For example, one component of the previous system was Galaxy Zoo, a citizen science project that resulted in reliable classifications of hundreds of thousands of galaxy images – a task that was expected to take multiple staff up to 5 years to complete. In the first Galaxy Zoo, more than 40 million classifications were made in approximately 175 days by more than 100,000 volunteers \[[11](references.md)]. The current SciServer system has scaled out these tools for multi-science-domain support, applicable to any form of data, including oceanography, mechanical engineering, social sciences, and finance. In addition, SciServer features a learning environment that is being used in K-12 and university education in a variety of contexts, both formal and informal.
+
+
+
+<figure><img src=".gitbook/assets/Screenshot 2023-03-15 at 2.49.39 PM.png" alt=""><figcaption><p>Figure 10: Example of Jupyter Notebook content</p></figcaption></figure>
+
+### 7.1  Accessing SciServer
+
+The team has developed a fully-fledged schema and data dictionary and developed Jupyter Notebooks that are accessible through SciServer. Users can first register an account at [https: //apps.sciserver.org](https://apps.sciserver.org/login-portal/login?callbackUrl=https%3A%2F%2Fapps.sciserver.org%2Fdashboard%2F) and then contact the team at _<mark style="color:blue;">sciserver-helpdesk@jhu.edu</mark>_ requesting access to Democratizing Data resources, indicating the reasons for the request and their SciServer username.&#x20;
+
+When access has been granted, example Jupyter notebooks are available on a shared volume alongside the data (see [https://apps.sciserver.org/dashboard/files/datavolumes/56](https://apps.sciserver.org/login-portal/login?callbackUrl=https%3A%2F%2Fapps.sciserver.org%2Fdashboard%2Ffiles%2Fdatavolumes%2F56) for the base data directory and [https://apps.sciserver.org/dashboard/files/datavolumes/56/](https://apps.sciserver.org/login-portal/login?callbackUrl=https%3A%2F%2Fapps.sciserver.org%2Fdashboard%2Ffiles%2Fdatavolumes%2F56%2Fnotebooks) notebooks for notebooks). The expectation will be that the user is familiar with the use of Jupyter as an interface, has a basic understanding of scripting (typically in Python), and is comfortable with SQL data retrieval.
+
+
+
+### 7.2   Databases on SciServer
+
+With a SciServer account and the appropriate permissions, a user can query Democratizing Data databases via either the CasJobs interface (see [https://www.sciserver.org/about/casjobs/](https://sciserver.org/about/casjobs/)) or via the CasJobs Python SDK (see [https://www.sciserver.org/docs/sciscript-python/ SciServer.html#module-SciServer.CasJobs](https://sciserver.org/docs/sciscript-python/SciServer.html#module-SciServer.CasJobs)).&#x20;
+
+In addition to a master database (ShowUsTheData v3) which contains records for all the agencies processed, there are databases available for individual agencies (possibly containing multiple socalled “runs”) with names of the form “DemocratizingData {AGENCY NAME}”. These agencylevel databases provide data in a manner closer to the API (see [Chapter 8](08-api.md)), e.g., validated data without licensed snippet information. Individual users may or may not see some or all of these depending on their access level. For more information on the database schema, please see [Appendix A](appendix-a.md) and [Appendix B](appendix-b.md).
