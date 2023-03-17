@@ -22,11 +22,11 @@ The validation tool is very straightforward, and validators have not hitherto ne
 
 
 
-**Registration.** Validators can’t register themselves in the validation tool. An account is created for them by project personnel, and they will receive their credentials by email. Democratizing Data personnel manage the text snippets that users can review and assign new batches of snippets upon request.&#x20;
+**Registration**    Validators can’t register themselves in the validation tool. An account is created for them by project personnel, and they will receive their credentials by email. Democratizing Data personnel manage the text snippets that users can review and assign new batches of snippets upon request.&#x20;
 
-**Sign-in.** The validation tool landing page has a login form for users to sign in.&#x20;
+**Sign-in**    The validation tool landing page has a login form for users to sign in.&#x20;
 
-**Review.** When the users log in, they see a bar with the number of snippets assigned and the number of snippets already reviewed. Project personnel initially assign each reviewer a set of snippets to review and can assign additional ones upon request. The reviewers are asked two questions for each snippet:
+**Review** When the users log in, they see a bar with the number of snippets assigned and the number of snippets already reviewed. Project personnel initially assign each reviewer a set of snippets to review and can assign additional ones upon request. The reviewers are asked two questions for each snippet:
 
 **Does the highlighted text in the snippet refer to a dataset?** Confirm whether the machine learning algorithm was correct in considering the phrase as a reference to a dataset in general.
 
